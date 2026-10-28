@@ -209,7 +209,63 @@ footer{
   bottom: -15px;
   right: -15px;
 }
+@media (max-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
 
+  .nav_links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .categories-container {
+    grid-template-columns: 1fr; 
+  }
+
+  .card-content {
+    max-width: 100%; 
+  }
+
+  .decor-img {
+    width: 65px;
+    height: 65px; 
+  }
+}
+
+
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav_links {
+    padding: 10px 0;
+    gap: 10px;
+    font-size: 0.9rem;
+  }
+
+  .card {
+    padding: 25px 20px;
+  }
+
+  .card h2 {
+    font-size: 1.4rem;
+  }
+
+  .card p {
+    font-size: 0.85rem;
+  }
+
+  .order {
+    width: 100%;
+    justify-content: center;
+  }
+}
 .decor-top-left {
   top: -10px;
   left: -10px;
